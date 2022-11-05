@@ -9,10 +9,11 @@
 
 #. /usr/lib/tiger-os/tiger-osd.sh
 
-export XDG_CONFIG_HOME="${PWD}"
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-export GTK_THEME=Adwaita-dark
+[ "${XDG_CONFIG_HOME}" = "" ] && {
+  export XDG_CONFIG_HOME="${HOME}/.config"
+}
+
+export GTK_THEME=Adwaita:dark
 
 yad \
     --center \
