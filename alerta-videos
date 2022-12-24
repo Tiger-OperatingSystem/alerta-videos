@@ -9,6 +9,8 @@
 
 #. /usr/lib/tiger-os/tiger-osd.sh
 
+HERE="$(dirname "$(readlink -f "${0}")")"
+
 [ "${XDG_CONFIG_HOME}" = "" ] && {
   export XDG_CONFIG_HOME="${HOME}/.config"
 }
@@ -22,7 +24,7 @@ export GTK_THEME=Adwaita:dark
 nao_mostrar_novamente=$(yad \
     --center \
     --borders=32 \
-    --image=/var/lib/curso-linux/videos/curso-linux.png \
+    --image="${HERE}/logoNew.png" \
     --sticky --undecorated --skip-taskbar --no-focus --timeout=10 --fixed \
     --text='<span size="large"><b>Novo por aqui ? </b>\nO Tiger OS possui um app que trás vários tutoriais de uso do sistema.\n</span>' \
     --text-align="left" \
