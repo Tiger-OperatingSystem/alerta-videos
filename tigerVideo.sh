@@ -22,9 +22,9 @@ export GTK_THEME=Adwaita:dark
 nao_mostrar_novamente=$(yad \
     --center \
     --borders=32 \
-    --image=logoNew.png \
+    --image=/var/lib/curso-linux/videos/curso-linux.png \
     --sticky --undecorated --skip-taskbar --no-focus --timeout=10 --fixed \
-    --text='<span size="large"><b>Novo por aqui ? </b>\nNa pasta de vídeos, existem vários tutoriais de uso do sistema.\n</span>' \
+    --text='<span size="large"><b>Novo por aqui ? </b>\nO Tiger OS possui um app que trás vários tutoriais de uso do sistema.\n</span>' \
     --text-align="left" \
     --form --field="Não mostrar mais":CHK \n \
     --button=gtk-open:42 \
@@ -34,4 +34,4 @@ nao_mostrar_novamente=$(yad \
   touch "${XDG_CONFIG_HOME}/alerta_de_videos"
 }
 
-[ "${?}" = "42" ] && xdg-open $(xdg-user-dir VIDEOS)
+[ "${?}" = "42" ] && /var/lib/curso-linux/curso-linux
