@@ -26,7 +26,7 @@ nao_mostrar_novamente=$(yad \
     --borders=32 \
     --image="${HERE}/logoNew.png" \
     --sticky --undecorated --skip-taskbar --no-focus --fixed \
-    --text='<span size="large"><b>Novo por aqui ? </b>\nO Tiger OS possui um app que trás vários tutoriais de uso do sistema.\n</span>' \
+    --text='<span size="large"><b>Quer aprender sobre como usar o TigerOS?</b>\nTemos várias aulas!\n<b>Vamos assistir agora?</b></span>' \
     --text-align="left" \
     --form --field="Não mostrar mais":CHK \n \
     --button=gtk-open:42 \
