@@ -32,8 +32,10 @@ nao_mostrar_novamente=$(yad \
     --button=gtk-open:42 \
     --button=gtk-close)
     
+escolha=${?}
+    
 [ "${nao_mostrar_novamente}" = "TRUE|" ] && {
   touch "${XDG_CONFIG_HOME}/alerta_de_videos"
 }
 
-[ "${?}" = "42" ] && /var/lib/curso-linux/curso-linux
+[ "${escolha}" = "42" ] && var/lib/curso-linux/curso-linux
