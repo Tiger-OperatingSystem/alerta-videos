@@ -38,4 +38,4 @@ escolha=${?}
   touch "${XDG_CONFIG_HOME}/alerta_de_videos"
 }
 
-[ "${escolha}" = "42" ] && var/lib/curso-linux/curso-linux
+[ "${escolha}" = "42" ] && /var/lib/curso-linux/curso-linux
