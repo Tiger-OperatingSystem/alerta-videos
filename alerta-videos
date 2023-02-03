@@ -29,6 +29,7 @@ nao_mostrar_novamente=$(yad \
     --text='<span size="large"><b>Quer aprender sobre como usar o TigerOS?</b>\nTemos várias aulas!\n<b>Vamos assistir agora?</b></span>' \
     --text-align="left" \
     --form --field="Não mostrar mais":CHK \n \
+    --always-print-result \
     --button=gtk-open:42 \
     --button=gtk-close)
     
